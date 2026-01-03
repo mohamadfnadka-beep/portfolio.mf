@@ -1,6 +1,6 @@
 :root {
   --text-color: #000000;
-  --link-color: #42565f;
+  --link-color: #6c767b;
   --background-color: #818485;
 }
 
@@ -152,7 +152,7 @@ nav .right a span {
 
 .projects-section {
   padding: 50px 50px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   color: #c8cecf;
 }
 
@@ -174,7 +174,7 @@ nav .right a span {
   gap: 10px;
   display: inline-flex;
   padding: 5px 10px;
-  border: 2px solid #c2caca;
+  border: 2px solid #a1b4b4;
   border-radius: 5px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -339,4 +339,34 @@ text-align: center;
 #myBtn:hover {
     background-color: #555;
     transform: scale(1.1);
+}
+
+
+footer {
+    background-color: #2b2c2c27; 
+    color: rgb(183, 192, 194);
+    padding: 20px 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: rgb(234, 238, 238);
+    margin: 0 15px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #555; 
+    transform: translateY(-3px);
+    display: inline-block;
 }
