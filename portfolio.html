@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="portfolio.css">
+  
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <h2>Mohamad Fanadka's portfolio</h2>
+    </div>
+  
+
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://www.instagram.com/fnadka.7" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+        <span>instagram</span>
+      </a>
+      
+      <a href="mohamadfnadka@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h1>hi, i'am Mohamad</h1>
+        <p>Web developer and full-stack student focused on building and designing modern, functional websites that turns an idea into reality.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#projects">
+            <i class="fa-solid fa-pen"></i>
+            <span>projects</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        I’m a full-stack web development student with a strong foundation in HTML, CSS, and JavaScript, focused on building modern, responsive, and user-friendly websites. I have a good eye for design and visual balance, which comes from my interest in photography and experience using tools like Photoshop and Lightroom. I enjoy combining clean code with thoughtful design to create websites that are both functional and visually engaging, and I’m continuously improving my skills by learning new technologies and best practices.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="img/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="img/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="img/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="cell">
+          <img src="img/camera logo2.jpg" alt="camera logo">
+          <span>photography</span>
+        </div>
+
+        <div class="cell">
+          <img src="img/lightroom.png" alt="lightroom logo">
+          <span>lightroom</span>
+        </div>
+
+        <div class="cell">
+          <img src="img/photoshop.png" alt="photoshop logo">
+          <span>photoshop</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: projects-->
+<section id="projects" class="projects-section">
+  <h2>projects</h2>
+
+<div class="projectslink-s">
+
+      <div class="projectslink">
+        <a href="pizza.html">pizza order</a>
+      </div>
+        
+      <div class="projectslink">
+        <a href="gallaty.html">gallary</a>
+      </div>
+
+      <div class="projectslink">
+        <a href="shop.html">shop</a>
+      </div>
+</div>
+
+</section>
+
+
+
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+
+      <div class="group">
+        
+        <form>
+          <h2>Contact me</h2>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <!--javascrip-for the top button-->
+        <script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({
+    top: 0,
+    behavior: 'smooth' 
+    });
+}
+</script>
+</body>
+</html>

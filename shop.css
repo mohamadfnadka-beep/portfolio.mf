@@ -1,0 +1,93 @@
+:root {
+--text-color: #000000;
+--link-color: #42565f;
+--background-color: #818485;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("img/petshop2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2c2c27;
+
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+
+/*section-shop*/
+h1 {
+    text-align: center;
+}
+
+.shop {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #42565f;
+    transition: 0.3s;
+    width: 300px;
+    position: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 200px;
+    margin-left: 155px;
+    gap: 5px; ;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #818485;
+}
+
+.container {
+    padding: 2px 16px;
+}

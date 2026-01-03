@@ -1,0 +1,154 @@
+:root {
+--text-color: #000000;
+--link-color: #42565f;
+--background-color: #818485;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+min-height: 100vh;
+background-image: url("img/background2.jpg");
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2c2c27;
+
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column img:hover {
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px ;
+
+}
+
+
+@media screen and (max-width: 800px) {
+.column {
+    flex: 50%;
+    max-width: 50%;
+}
+}
+
+@media screen and (max-width: 600px) {
+.column {
+    flex: 100%;
+    max-width: 100%;
+}
+}
+
+/* --- Mobile View Settings --- */
+@media screen and (max-width: 600px) {
+    nav .right a span {
+    display: none;
+    }
+
+    nav .left a span {
+    font-size: 16px; 
+    }
+
+
+nav {
+    padding: 0 15px;
+    height: 60px;
+    justify-content: space-around;
+}
+
+nav .right a i {
+    font-size: 22px;
+    margin: 0 5px;
+}
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px; 
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: #738f9c; 
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}

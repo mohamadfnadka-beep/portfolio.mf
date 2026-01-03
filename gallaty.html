@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>gallary</title>
+        <link rel="stylesheet" href="gallary.css">
+    </head>
+    <body>
+            <!-- NAVBAR -->
+    <nav>
+    <div class="left">
+        <a href="portfolio.html">
+            <span>Mohamad Fanadka's portfolio</span>
+        </a>
+    </div>
+
+    <div class="right">
+        <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+        </a>
+
+        <a href="https://www.instagram.com/fnadka.7"   target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+        <span>instagram</span>
+        </a>
+        
+        
+        <a href="mailto:mohamadfnadka@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+        </a>
+    </div>
+    </nav>
+
+        <h1>my gallary</h1>
+
+            <div class="row">
+    <div class="column">
+        <img src="img.gallary/2.jpeg">
+        <img src="img.gallary/36.jpeg">
+        <img src="img.gallary/1.jpeg">
+        <img src="img.gallary/39.jpeg">
+        <img src="img.gallary/3.jpeg">
+        <img src="img.gallary/4.jpeg">
+        <img src="img.gallary/5.jpeg">
+        <img src="img.gallary/6.jpeg">
+        <img src="img.gallary/7.jpeg">
+        <img src="img.gallary/8.jpeg">
+        <img src="img.gallary/9.jpeg">
+        <img src="img.gallary/10.jpeg">
+
+    </div>
+
+    <div class="column">
+        <img src="img.gallary/11.jpeg">
+        <img src="img.gallary/35.jpeg">
+        <img src="img.gallary/13.jpeg">
+        <img src="img.gallary/14.jpeg">
+        <img src="img.gallary/15.jpeg">
+        <img src="img.gallary/16.jpeg">
+        <img src="img.gallary/17.jpeg">
+        <img src="img.gallary/18.jpeg">
+        <img src="img.gallary/19.jpeg">
+        <img src="img.gallary/20.jpeg">
+    </div>
+
+    <div class="column">
+        <img src="img.gallary/21.jpeg">
+        <img src="img.gallary/22.jpeg">
+        <img src="img.gallary/23.jpeg">
+        <img src="img.gallary/24.jpeg">
+        <img src="img.gallary/25.jpeg">
+        <img src="img.gallary/26.jpeg">
+        <img src="img.gallary/27.jpeg">
+        <img src="img.gallary/40.jpeg">
+        <img src="img.gallary/29.jpeg">
+        <img src="img.gallary/30.jpeg">
+        <img src="img.gallary/38.jpeg">
+        <img src="img.gallary/37.jpeg">
+
+    </div>
+
+    </div>
+        </section>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <!--javascrip-for the top button-->
+        <script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({
+    top: 0,
+    behavior: 'smooth' 
+    });
+}
+</script>
+    </body>
+</html>
